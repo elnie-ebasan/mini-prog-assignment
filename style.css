@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-image: url(images/pamplona1.jpg);
+    /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/pamplona1.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    max-height: 65vh;
+    overflow: hidden;
+}
+
+.navbar-brand img {
+    width: 120px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.navbar-nav {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+
+ul li :hover {
+    background-color: #b8b2b2;
+    border-radius: 10px;
+}
+
+.box {
+    width: 65rem;
+    height: 100vh;
+    /* border: solid; */
+    padding: 5rem 4rem;
+    margin: auto;
+}
+
+.box1 {
+    width: 65rem;
+    height: 100vh;
+    /* padding: 3rem 3rem; */
+    /* border: solid; */
+    /* margin-left: 5rem; */   
+}
+
+h1 {
+    font-size: 7rem;
+    font-family: brush script mt;
+    font-weight: 300px;
+}
+
+main {
+    height: 95vh;
+    padding-top: 3rem;
+}
+
+p {
+    font-family:'Lucida Sans Regular', sans-serif;
+    font-size: 12px;
+    color: white;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.left {
+    padding: 6rem 6rem;
+}
+
+.right {
+    padding: 20rem 6rem;
+    padding-top: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    background-color: #b8b2b2;
+    float: left;
+    width: 20%;
+    padding: 25px;
+  }
+  
+  Clearfix (clear floats)
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+

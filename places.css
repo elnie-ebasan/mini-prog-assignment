@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: rgb(207, 188, 112);
+    max-height: 65vh;
+    /* overflow: hidden; */
+}
+
+main {
+    margin: 5rem;
+    height: 75vh;
+    padding-top: 3rem;
+    border: solid skyblue;
+}
+
+p {
+    font-size: 20px;
+    padding: 5rem;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+.words {
+    width: 90rem;
+    height: 26rem;
+    z-index: 9;
+    padding: 5rem;
+    margin-right: 5rem;
+}
+
+.pics {
+    margin-top: 1rem;
+    margin-bottom: 8rem;
+}
+
+.navbar-brand img {
+    width: 120px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.navbar-nav {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+
+ul li :hover {
+    background-color: #b8b2b2;
+    border-radius: 10px;
+}
+
+
