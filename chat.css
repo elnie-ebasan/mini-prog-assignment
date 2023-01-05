@@ -2,23 +2,27 @@
 
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
-  background-color: transparent;
   color: white;
   padding: 6px;
   border: none;
   cursor: pointer;
   opacity: 0.8;
   position: fixed;
-  bottom: 25px;
-  right: 50px;
+  bottom: 50px;
+  right: 70px;
   width: 50px;
   height: 50px;
+  border-radius: 15px;
 }
 
 .open-button img {
-  width: 50px;
-  height: 50px;
-  border-radius: 5px;
+  width: 60px;
+  height: 57px;
+  top: 0%;
+  right: 0%;
+  border-radius: 15px;
+  position: absolute;
+  box-shadow: 1px 1px 2px black, 0 0 25px #1272a4, 0 0 5px #8dd7e2;
 }
 
 /* The popup chat - hidden by default */
@@ -48,6 +52,7 @@
   background: #f1f1f1;
   resize: none;
   min-height: 200px;
+  font-size: 15px;
 }
 
 /* When the textarea gets focus, do something */
@@ -60,14 +65,14 @@
 .form-container .btn {
   background-color: #04AA6D;
   color: white;
-  padding: 10px 15px 10px 15px;
+  padding: 15px 15px 15px 15px;
   border: none;
   cursor: pointer;
-  width: 70px;
-  height: 10px;
+  height: 20px;
   border-radius: 7px;
   opacity: 0.8;
   width:100px;
+  font-size: 15px;
 }
 
 .btn {
@@ -82,5 +87,10 @@
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
+}
+
+h2 {
+  font-size: 20px;
+  color:black;
 }
 

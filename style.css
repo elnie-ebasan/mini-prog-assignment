@@ -1,96 +1,237 @@
-* {
+*{
     margin: 0;
     padding: 0;
 }
 
-html {
+main{
+    max-width: 100vw;
     font-size: 10px;
-}
-
-body {
-    background-image: url(images/pamplona1.jpg);
-    /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/pamplona1.jpg'); */
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url("images/top 4/arminda\'s.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-    max-height: 65vh;
-    overflow: hidden;
+    background-size: cover;
 }
 
-.navbar-brand img {
-    width: 120px;
-    height: 70px;
-    border-radius: 50%;
+.navbar {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding: 0rem 7rem;
+    background-color: white;
 }
 
-.navbar-nav {
-    font-size: 20px;
+.nav-link {
+    font-size: 15px;
+}
+
+.home-nav-icon {
+    font-family: 'Kolker Brush', sans-serif;
+    font-size: 55px;
+}
+
+
+.nav-item a{
+    color: black;
+}
+
+.navbar-nav :hover {
+    /* color: yellow; */
+    color: lightseagreen;
+    border-radius: 8px;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.navbar li {
+    margin-left: 1.5rem;
+}
+
+.web-content{
+    padding-top: 10rem;
+}
+
+.words {
+    font-size: 6rem;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px #1272a4, 0 0 5px #8dd7e2;
+    margin-bottom: 4rem;
+}
+
+.content {
+    width: 50rem;
+    font-size: 25px;
+    color: whitesmoke;
+    letter-spacing: 2px;
     font-weight: 500;
-    margin-bottom: 5rem;
-}
-
-ul li :hover {
-    background-color: #b8b2b2;
-    border-radius: 10px;
-}
-
-.box {
-    width: 65rem;
-    height: 100vh;
-    /* border: solid; */
-    padding: 5rem 4rem;
+    text-shadow: 2px 2px 5px black, 0 0 25px #1272a4, 0 0 5px #1e707c;
+    border: 1px solid lightblue;
     margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.box1 {
-    width: 65rem;
-    height: 100vh;
-    /* padding: 3rem 3rem; */
-    /* border: solid; */
-    /* margin-left: 5rem; */   
+/* ===Places== */
+/* ---------------------------------------- */
+
+.places-section {
+    background-color: #315c94;
+    height: auto;
+    padding-top: 4rem;
+    position: relative;
+    padding-bottom: 3rem;
 }
 
-h1 {
-    font-size: 7rem;
-    font-family: brush script mt;
-    font-weight: 300px;
+.visited-places {
+    display: flex;
+    margin-left: 13rem;
+    margin-bottom: 2rem;
+    color: white;
 }
 
-main {
-    height: 95vh;
-    padding-top: 3rem;
+.places-pictures {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.card {
+    padding: 15px;
+    margin:1rem;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: -15px 15px 15px black;
+    transition: transform .5s; 
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 p {
-    font-family:'Lucida Sans Regular', sans-serif;
-    font-size: 12px;
-    color: white;
-    padding: 2rem 1rem 1rem 1rem;
+    font-size: 16px;
 }
+
+.places-content {
+    /* align-items: center;
+    justify-content: center; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    width: 80%;
+    margin: 5rem auto;
+}
+
+/* .content-left {
+    width: 50rem;
+    height: 12rem;
+    padding-top: 1rem;
+    margin-left: 4rem;
+} */
 
 .left {
-    padding: 6rem 6rem;
+    font-size: 18px;
 }
 
-.right {
-    padding: 20rem 6rem;
-    padding-top: 10rem;
-    align-items: center;
-    justify-content: center;
+.content-right {
+    padding: 2rem;
+    border-radius: 10px;
 }
 
-.column {
-    background-color: #b8b2b2;
-    float: left;
-    width: 20%;
-    padding: 25px;
+hr {
+    margin: 0rem 13rem;
+    margin-bottom: 5rem;
+    border: none;
+    height: 5px;
+    background-color: black;
+}
+
+/* contact section */
+/* ============================================== */
+
+/* .contact-section{
+    width: 100%;
+    height: auto;
+    background-color: #0f2e57;
+} */
+
+.contact {
+    margin: 10rem;
+    width: 80%;
+}
+
+.personal-contact {
+    font-size: 18px;
+    margin-top: 0rem;
+}
+
+.personal-contact i:hover {
+    color: skyblue;
+}
+
+.contact-form {
+    font-size: 18px;
+    width: 60rem;
+    height: 28rem;
+    margin-top: 3rem;
+    padding: 2rem 4rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 1px 20px 10px #0f2e57;
+}
+
+.submit {
+    border-radius: 8px;
+    width: 5rem;
+    border: 1px solid black;
+}
+
+.submit:hover {
+    color: red;
+}
+
+.copyright {
+    font-size: 18px;
+}
+
+/* ============ */
+/* activities */
+
+* {
+    box-sizing: border-box;
   }
   
-  Clearfix (clear floats)
-  .row::after {
+  .container {
+    padding: 64px;
+  }
+  
+  /* Clear floats */
+  .row:after {
     content: "";
-    clear: both;
     display: table;
+    clear: both
+  }
+  
+  /* 2/3 column */
+  .column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+  }
+  
+  /* 1/3 column */
+  .column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+  
+  /* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
+  @media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+      width: 100%;
+      text-align: center;
+    }
   }
 
+  
 
