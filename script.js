@@ -1,19 +1,54 @@
-let slideIndex = 0;
-showSlides();
+window.onload = function () {
+  const images = [...document.querySelectorAll('.image')];
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+  const popup = document.querySelector('.pop-up');
+  const closeBtn = document.querySelector('.close-btn');
+  const image = document.querySelector('.image');
+  const imageName = document.querySelector('.image-name');
+  const largeImage = document.querySelector('.large-image');
+  const leftArrow = document.querySelector('.left-arrow');
+  const rightArrow = document.querySelector('.right-arrow');
+  
+  let index = 0;
+  console.log(leftArrow)
+  
+  const updateImage = ({src, alt}) => {
+    let path = src
+    largeImage.src = path;
+    imageName.innerHTML = alt
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+
+  images.forEach((item, i) => {
+    item.removeEventListener('click', null)
+    item.addEventListener('click', function () {
+      index = i
+      updateImage(item);
+      popup.classList.remove('inactive');
+      popup.classList.add('active');
+    })
+  })
+  
+  closeBtn.addEventListener('click', () => {
+    popup.classList.remove('active');
+    popup.classList.add('inactive');
+  })
+
+  
+  leftArrow.onclick = function () {
+    if (index > 0) {
+      index--
+      const item = images[index]
+      updateImage(item)
+    }
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
+
+  
+  rightArrow.onclick = function () {
+    if (index < images.length) {
+      index++
+      const item = images[index]
+      updateImage(item)
+    }
+  }
+  
+} 
