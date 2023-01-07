@@ -13,6 +13,8 @@
 
   <link rel="stylesheet" href="all-places.css">
 
+  <link rel="stylesheet" href="chat.css">
+
 </head>
 
 <body>
@@ -103,5 +105,47 @@
   <a href="#"><button>Back to Top</button></a>
   </div>
 </main>
+  <!-- Copyright-section-->
+  <footer class="bg-dark text-center text-light">
+
+    <!-- Copyright-section-->
+    <div class="copyright" style="background-color: rgba(0, 0, 0, 0.1); font-size: 18px;">
+    Copyright © 2023. <a class="copy" style="color: white; text-decoration: none;" href="#">Elnie Ebasan-2023. </a> All rights reserved.
+    </div>
+   
+  </footer>
+  
+    <button class="open-button" onclick="openForm()"><img src="images/icons/message-icon-buble-icon-chat-icon-message-free-vector.jpg" alt="icon">
+    </button>
+  
+    <div class="chat-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+    <h2>Hi! How can we help?   😊</h2>
+  
+    <!-- <label for="msg"><b>Message</b></label> -->
+    <textarea placeholder="Type your message here ..." name="msg" required></textarea>
+    
+        <div class="d-flex justify-content-between">
+          <button type="submit" class="btn d-flex justify-content-center align-items-center m-0"><i class="fa-thin fas fa-paper-plane"></i></button>
+          <button type="button" class="btn cancel d-flex justify-content-center align-items-center m-0" onclick="closeForm()"><i class="fa-light fas fa-circle-xmark"></i></button>
+        </div>
+      </form>
+    </div>
+  
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+  
+    </script>
+
 </body>
+
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/6e9296540d.js" crossorigin="anonymous"></script>
+
 </html>

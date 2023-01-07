@@ -79,12 +79,15 @@ main{
     padding-top: 4rem;
     position: relative;
     padding-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .visited-places {
     display: flex;
-    margin-left: 5.5rem;
-    margin-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
     color: white;
 }
 
@@ -138,28 +141,36 @@ p {
 }
 
 hr {
-    margin: 0rem 6rem;
+    margin: 0rem 5rem;
     margin-bottom: 5rem;
     border: none;
     height: 5px;
     background-color: black;
 }
 
+.activities-section {
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  
+}
+
 .more-pictures {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin: auto;  
-    width: 88%;  
+    margin-right: 3rem;
+    width: 90%;  
 }
 
 .more-pictures img {
-    width: 160px;
-    height: 160px;
+    width: 270px;
+    height: 270px;
     cursor: pointer;
     padding: 1px;
-    margin: 10px;
+    margin: 30px;
     border-radius: 15px;
     border: 0.5px solid white;
     box-shadow: -15px 15px 15px black;
@@ -174,12 +185,12 @@ hr {
 /* ====================================================== */
 .pop-up {
     position: fixed;
-    top: 15%;
+    top: 12%;
     left: 10%;
     /* transform: translate(-50%, -50%) scale(0); */
     width: 80%;
     max-width: 1600px;
-    height: 75vh;
+    height: 85vh;
     max-height: 800px;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.75);
@@ -340,14 +351,22 @@ hr {
 /* contact section */
 /* ============================================== */
 
-.contact {
-    margin: 10rem;
-    width: 80%;
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5rem;
+    width: 100%;
+    height: auto;
 }
 
+
+
 .personal-contact {
-    font-size: 18px;
-    margin-top: 0rem;
+    font-size: 12px;
+    margin-top: 2rem;
 }
 
 .personal-contact i:hover {
@@ -356,10 +375,10 @@ hr {
 
 .contact-form {
     font-size: 18px;
-    width: 60rem;
-    height: 28rem;
-    margin-top: 3rem;
-    padding: 2rem 4rem;
+    /* width: 30rem; */
+    height: auto;
+    margin: auto;
+    padding: 2rem;
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 0px 1px 20px 10px #0f2e57;
@@ -379,44 +398,21 @@ hr {
     font-size: 18px;
 }
 
-/* ============ */
 /* activities */
+/* ============================================ */
+/* .carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+} */
+
+.carousel-item img{
+    width: 60%;
+    height: 60vh;
+}
 
 
-  
-  /* .container {
-    padding: 64px;
-  } */
-  
-  /* Clear floats */
-  /* .row:after {
-    content: "";
-    display: table;
-    clear: both
-  } */
-  
-  /* 2/3 column */
-  /* .column-66 {
-    float: left;
-    width: 66.66666%;
-    padding: 20px;
-  } */
-  
-  /* 1/3 column */
-  /* .column-33 {
-    float: left;
-    width: 33.33333%;
-    padding: 20px;
-  }
-   */
-  /* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
-  /* @media screen and (max-width: 1000px) {
-    .column-66,
-    .column-33 {
-      width: 100%;
-      text-align: center;
-    }
-  } */
 
   /* responsive */
   /* =================================== */
