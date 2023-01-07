@@ -5,9 +5,8 @@
 }
 
 .navbar {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding: 0rem 7rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     background-color: white;
 }
 
@@ -34,13 +33,13 @@
 }
 
 .navbar li {
-    margin-left: 1.5rem;
+    margin-left: 1rem;
 }
 
 /* gallery */
 /* ========================================= */
 main {
-    margin: 0rem 7rem;
+    margin: 0rem 2rem;
 }
 .grid {
     display: grid;
