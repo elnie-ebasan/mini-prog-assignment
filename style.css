@@ -46,16 +46,17 @@ main{
 }
 
 /* main */
+/* ============================================================== */
 
 .web-content{
-    padding: 13rem 9rem;
+    padding: 13rem 0rem;
 }
 
 .words {
     font-size: 5rem;
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px #1272a4, 0 0 5px #8dd7e2;
-    margin-bottom: 5rem;
+    margin-bottom: 5.5rem;
 }
 
 .content {
@@ -70,8 +71,8 @@ main{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* ===Places== */
-/* ---------------------------------------- */
+/* places */
+/* ======================================================================= */
 
 .places-section {
     background-color: #315c94;
@@ -141,20 +142,23 @@ p {
 }
 
 hr {
-    margin: 0rem 5rem;
+    margin: 0rem 20rem;
     margin-bottom: 5rem;
     border: none;
     height: 5px;
     background-color: black;
 }
 
+.carousel-item img{
+    width: 60%;
+    height: 60vh;
+}
+
+/* activities */
+/* ============================================ */
 .activities-section {
     width: 100%;
-    margin-bottom: 4rem;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-  
+    margin-bottom: 4rem;  
 }
 
 .more-pictures {
@@ -181,6 +185,7 @@ hr {
     transition: transform .5s; 
     transform: scale(1.05);
 }
+
 
 /* pop-up */
 /* ====================================================== */
@@ -331,6 +336,29 @@ hr {
 }
 
 @media screen and (max-width: 575px) {
+    
+    .web-content{
+        padding: 13rem 0rem;
+    }
+    
+    .words {
+        font-size: 4rem;
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px #1272a4, 0 0 5px #8dd7e2;
+        margin-bottom: 5.5rem;
+    }
+    
+    .content {
+        width: 50rem;
+        font-size: 20px;
+        color: whitesmoke;
+        letter-spacing: 2px;
+        font-weight: 500;
+        text-shadow: 2px 2px 5px black, 0 0 25px #1272a4, 0 0 5px #1e707c;
+        border: 1px solid lightblue;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
     .more-pictures {
         display: flex;
         flex-direction: row;
@@ -348,6 +376,7 @@ hr {
         border-radius: 15px;
     }
 }
+
 
 /* contact section */
 /* ============================================== */
@@ -399,25 +428,9 @@ hr {
     font-size: 18px;
 }
 
-/* activities */
-/* ============================================ */
-/* .carousel-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-} */
-
-.carousel-item img{
-    width: 60%;
-    height: 60vh;
-}
-
-
-
   /* responsive */
   /* =================================== */
-  @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 
     .web-content{
         padding-top: 10rem;
@@ -451,10 +464,6 @@ hr {
         padding-bottom: 1rem;
         color: white;
     }
-  }
-
-  @media screen and (max-width: 740px) {
-
   }
 
   @media screen and (max-width: 699px) {
@@ -526,6 +535,38 @@ hr {
     .navbar {
         padding-left: 7rem;
         padding-right: 7rem;
+    }
+  }
+
+  @media screen and (max-width: 411px) {
+    main{
+        font-size: 10px;
+        background: linear-gradient(to top,rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url("images/top 4/arminda\'s.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .web-content{
+        padding-top: 8rem;
+    }
+    
+    .words {
+        font-size: 3rem;
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px #1272a4, 0 0 5px #8dd7e2;
+        margin-bottom: 4rem;
+    }
+    
+    .content {
+        width: 20rem;
+        font-size: 12px;
+        color: whitesmoke;
+        letter-spacing: 1px;
+        font-weight: 500;
+        text-shadow: 2px 2px 5px black, 0 0 25px #1272a4, 0 0 5px #1e707c;
+        border: 1px solid lightblue;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.5);
     }
   }
   

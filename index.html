@@ -23,6 +23,8 @@
 
     <link rel="stylesheet" href="chat.css">
 
+    <link rel="stylesheet" href="responsive.css">
+
     <script src="script.js"></script>
 
 
@@ -30,41 +32,44 @@
   <!-- main/home page -->
     <main id="home">
 
+      <!-- navbar -->
       <header>
-        <nav class="navbar navbar-expand-lg background-color: beige; navbar-light fixed-top">
-            <div class="container-fluid">
-                <div class="icon-title d-flex">
-                    <h1 class="home-nav-icon">e-Xplore</h1>
-                </div>
-    
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                
-                <div class="collapse navbar-collapse text-center" id="menu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Home</a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a href="#places" class="nav-link">Places</a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a href="#activities" class="nav-link">Activities</a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container-fluid">
+            <div class="icon-title d-flex">
+              <h1 class="home-nav-icon">e-Xplore</h1>
             </div>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+                   
+            <div class="collapse navbar-collapse text-center" id="menu">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Home</a>
+                </li>
+    
+                <li class="nav-item">
+                  <a href="#places" class="nav-link">Places</a>
+                </li>
+    
+                <li class="nav-item">
+                  <a href="#activities" class="nav-link">Activities</a>
+                </li>
+    
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+               
+          </div>
         </nav>
       </header>
+      <!-- end of navbar -->
 
+      <!-- main/front page -->
       <div class="web-content">
         <div class="container text-center">
             <div class="row">
@@ -73,98 +78,102 @@
             </div>
         </div>
       </div>
-
+      <!-- end of main/front page -->
     </main>
+  <!-- main/home page -->
 
-  <!-- places -->
-  <section class="places-section" id="places">   
-        
-    <div class="places-title">
-      <h1 class="visited-places">Top Visited Places</h1>
-    </div>
+  <!-- places section -->
+    <section class="places-section" id="places">  
 
-    <div class="row places-pictures">           
-      <div class="col-2 card" style="width: 260px; height: 530px;">
+      <!-- places title/header -->
+      <div class="places-title">
+        <h1 class="visited-places">Top Visited Places</h1>
+      </div>
+      <!-- places title/header -->
+
+      <!-- places content -->
+      <div class="row places-pictures">           
+        <div class="col-2 card" style="width: 260px; height: 530px;">
           <img src="./images/top 4/Cafe-Alicia-Top-View.jpg" width="230px" height="400px" alt="Cafe-Alicia-Top-View">
           <div class="card-body">
               <h4 class="card-text">Cafe Alicia</h4>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quis laudantium dolorem at est corporis sit perspiciatis</p>
               <a href="http://127.0.0.1:5504/cafe-alicia.html" class="btn btn-primary">More Photos</a>
           </div>
-      </div>
+        </div>
 
-      <div class="col-2 card" style="width: 260px; height: 530px;">
+        <div class="col-2 card" style="width: 260px; height: 530px;">
           <img src="./images/top 4/la nebbia.jpg" width="230px" height="400px" alt="la nebbia">
           <div class="card-body">
               <h4 class="card-text">La Nebbia</h4>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quis laudantium dolorem at est corporis sit perspiciatis</p>
               <a href="http://127.0.0.1:5504/la-nebbia.html" class="btn btn-primary">More Photos</a>
           </div>
-      </div>
+        </div>
 
-      <div class="col-2 card" style="width: 260px; height: 530px;">
+        <div class="col-2 card" style="width: 260px; height: 530px;">
           <img src="./images/top 4/montefrio.jpg" width="230px" height="400px" alt="montefrio">
           <div class="card-body">
               <h4 class="card-text">Montefrio</h4>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quis laudantium dolorem at est corporis sit perspiciatis</p>
               <a href="http://127.0.0.1:5504/montefrio.html" class="btn btn-primary">More Photos</a>
           </div>
-      </div>
+        </div>
 
-      <div class="col-2 card" style="width: 260px; height: 530px;">
+        <div class="col-2 card" style="width: 260px; height: 530px;">
           <img src="./images/top 4/arminda's.jpg" width="230px" height="400px" alt="arminda">
           <div class="card-body">
               <h4 class="card-text">Arminda's Cabin</h4>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quis laudantium dolorem at est corporis sit perspiciatis</p>
               <a href="http://127.0.0.1:5504/arminda.html" class="btn btn-primary">More Photos</a>
           </div>
-      </div>
-    </div>
-
-    <div class="row places-content d-flex">
-      <div class="col-6 content-left">
-        <p class="left" style="color: white">
-          These breathtaking views can be found in the mountains of Brgy. Yupisan and Brgy. San Isidro Pamplona. Everyone can visit and enjoy the peace and sensational ambiance of the mountain top and let their hearts rest and let out the stress!
-        </p>
+        </div>
       </div>
 
-      <div class="col-6 content-right" style="background-color: #89d6e4;">
-        <i><p>
-          We live in a world full of challenges, which can leave you feeling drained and exhausted. Work environments can build a mountain of stress, which we tend to ignore, creating more stress.
-        </p>
+      <div class="row places-content d-flex">
+        <div class="col-lg-6 col-xm-12 content-left">
+          <p class="left" style="color: white">
+            These breathtaking views can be found in the mountains of Brgy. Yupisan and Brgy. San Isidro Pamplona. Everyone can visit and enjoy the peace and sensational ambiance of the mountain top and let their hearts rest and let out the stress!
+          </p>
+        </div>
 
-        <h2 class="qoute" style="font-size: 35px"> "Life should have more mountains and less stress."
-        </h2></i>
+        <div class="col-lg-6 col-xm-12 content-right" style="background-color: #89d6e4;">
+          <i><p class="right">
+            We live in a world full of challenges, which can leave you feeling drained and exhausted. Work environments can build a mountain of stress, which we tend to ignore, creating more stress.
+          </p>
+
+          <h2 class="qoute" style="font-size: 35px"> "Life should have more mountains and less stress."
+          </h2></i>
+        </div>
       </div>
-    </div>
 
-    <!-- MORE -->
-    <hr>
+      <!-- MORE places -->
+      <hr>
 
-    <div class="container" style="width: 60%;">
-      <div class="places-title">
-        <h1 class="visited-places">More to Discover</h1>
-      </div>
-    
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      <div class="container" style="width: 60%;">
+        <div class="places-title">
+          <h1 class="visited-places">More to Discover</h1>
         </div>
     
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/palaypay.jpg" class="d-block w-100" alt="palaypay-falls">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Palaypay Falls</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
           </div>
+    
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/palaypay.jpg" class="d-block w-100" alt="palaypay-falls">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Palaypay Falls</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
     
           <div class="carousel-item">
             <img src="images/can.jpg" class="d-block w-100" alt="canlunggad-falls">
@@ -225,12 +234,15 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
-    </div>       
-  </section>
-  <!-- end of places -->
+
+      </div>         
+      <!-- MORE places --> 
+
+
+    </section>
+  <!-- end of places section -->
 
   <!-- ACTIVITIES -->
-
   <section class="activities-section" id="activities">
 
     <div class="row">
@@ -241,7 +253,7 @@
 
     <div class="pop-up inactive">
       <div class="top">
-        <p class="image-name">Canlunggad Falls</p>
+        <p class="image-name">Camping</p>
         <span class="close-btn"><i class="fa-regular fa-circle-xmark fa-2xl" id="close-button"></i></span>
       </div>
 
@@ -270,14 +282,6 @@
         <img src="images/zipline.jpg" alt="zipline" class="image">
       </div>
 
-      <!-- <div class="more col-lg-2 col-md-4 col-sm-6">
-        <img src="images/palaypay.jpg" alt="Palaypay Falls" class="image">
-      </div>
-
-      <div class="more col-lg-2 col-md-4 col-sm-6">
-        <img src="images/mag1.jpg" alt="Magsusunog River" class="image">
-      </div> -->
-
     </div>
   </section>
   <!-- end of ACTIVITIES -->
@@ -285,108 +289,109 @@
   <hr style="margin: 0rem 15rem">
 
 
-<!-- contact -->
-
-<section class="contact-section" id="contact">
-  <div class="container w-100 vh-auto">
+  <!-- contact section -->
+  <section class="contact-section" id="contact">
+    <div class="container w-100 vh-auto">
       <div class="row">
           <h3 class="contact-header d-flex justify-content-center align-items-center" style="padding-bottom: 4rem; padding-top: 4rem;">You can reach me here:</h3>
       </div>
 
       <div class="row d-flex justify-content-center align-items-center">
-          <div class="col-lg-6 d-flex align-items-center justify-content-center">
-              <div class="personal-contact">
-                  <i class="fa-sharp fa-solid fa-phone-volume fa-2xl"></i><br><br>
-                  <h5>+639101086629</h5> <br><br>
+        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+          <div class="personal-contact">
+            <i class="fa-sharp fa-solid fa-phone-volume fa-2xl"></i><br><br>
+            <h5>+639101086629</h5> <br><br>
 
-                  <i class="fa-brands fa-facebook fa-2xl"></i><br><br>
-                  <h5>https://www.facebook.com/elnie.ebasan </h5><br><br>
+            <i class="fa-brands fa-facebook fa-2xl"></i><br><br>
+            <h5>https://www.facebook.com/elnie.ebasan </h5><br><br>
 
-                  <i class="fa-solid fa-envelope fa-2xl"></i><br><br>
-                  <h5>eebasan43@gmail.com </h5><br>
-              </div>
+            <i class="fa-solid fa-envelope fa-2xl"></i><br><br>
+            <h5>eebasan43@gmail.com </h5><br>
           </div>
+        </div>
 
-          <div class="col-lg-6 d-flex align-items-center justify-content-center">
-              <div class="contact-form" id="contact-down">
-                  <div>
-                      <div class="input-group">
-                          <label for="fullname">Full Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                          <input type="text" id="firstname">                                
-                      </div>
-                  </div>
-                  <br>
+        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+          <div class="contact-form" id="contact-down">
+            <div>
+              <div class="input-group">
+                <label for="fullname">Full Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="firstname">                                
+              </div>
+            </div>
+            <br>
                   
-                  <div>
-                      <div class="input-group">
-                          <label for="email">Email Address:&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                          <input type="email" id="email">
-                      </div>
-                  </div>
-                  <br>
-
-                  <div>
-                      <div class="input-group">
-                          <label for="address">Message: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
-                          <textarea id="number" cols="30" rows="4" style="resize: none"></textarea>
-                      </div>
-                  </div>
-                  <br>
-
-                  <div>
-                  <input type="submit" value="Submit" class="submit">
-                  </div>
-
+            <div>
+              <div class="input-group">
+                <label for="email">Email Address:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="email" id="email">
               </div>
+            </div>
+            <br>
+
+            <div>
+              <div class="input-group">
+                <label for="address">Message: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+                <textarea id="number" cols="30" rows="4" style="resize: none"></textarea>
+              </div>
+            </div>
+            <br>
+
+            <div>
+              <input type="submit" value="Submit" class="submit">
+            </div>
+
           </div>
+        </div>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
+  <!-- end of contact section -->
 
-<footer class="bg-dark text-center text-light">
+  <!-- footer section -->
+  <footer class="bg-dark text-center text-light">
 
-  <!-- Copyright-section-->
-  <div class="copyright" style="background-color: rgba(0, 0, 0, 0.1); font-size: 18px;">
-  Copyright © 2023. <a class="copy" style="color: white; text-decoration: none;" href="#">Elnie Ebasan-2023 </a> All rights reserved.
-  </div>
+    <!-- Copyright-section-->
+    <div class="copyright" style="background-color: rgba(0, 0, 0, 0.1); font-size: 18px;">
+      Copyright © 2023. <a class="copy" style="color: white; text-decoration: none;" href="#">Elnie Ebasan-2023 </a> All rights reserved.
+    </div>
  
-</footer>
+  </footer>
+  <!-- footer section -->
 
+  <!-- pop up chat -->
   <button class="open-button" onclick="openForm()"><img src="images/icons/message-icon-buble-icon-chat-icon-message-free-vector.jpg" alt="icon">
   </button>
 
   <div class="chat-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-  <h2>Hi! How can we help?   😊</h2>
-
-  <!-- <label for="msg"><b>Message</b></label> -->
-  <textarea placeholder="Type your message here ..." name="msg" required></textarea>
+    <form action="/action_page.php" class="form-container">
+      <h2>Hi! How can we help?   😊</h2>
+      <textarea placeholder="Type your message here ..." name="msg" required></textarea>
   
       <div class="d-flex justify-content-between">
         <button type="submit" class="btn d-flex justify-content-center align-items-center m-0"><i class="fa-thin fas fa-paper-plane"></i></button>
         <button type="button" class="btn cancel d-flex justify-content-center align-items-center m-0" onclick="closeForm()"><i class="fa-light fas fa-circle-xmark"></i></button>
       </div>
+
     </form>
   </div>
-
-<script>
-  function openForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
-
-  </script>
+   <!-- end of pop up chat -->
 
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
 
-<!-- font awesome -->
-<script src="https://kit.fontawesome.com/6e9296540d.js" crossorigin="anonymous"></script>
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
 
-<script src="script.js"></script>
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/6e9296540d.js" crossorigin="anonymous"></script>
 
 </html>
