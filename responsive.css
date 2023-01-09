@@ -231,7 +231,7 @@
         padding-right: 2rem;
     }
 
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 400px) {
     .navbar {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -258,6 +258,44 @@
         border: 1px solid lightblue;
         margin: auto;
         background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .qoute {
+        font-size: 20px !important;
+    }
+
+    .left, .right {
+        font-size: 15px !important;
+    }
+
+    .activities-section {
+        width: 100%;
+        margin-bottom: 4rem;  
+    }
+
+    .carousel-item img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .more-pictures {
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 90%;  
+    }
+    
+    .more-pictures img {
+        width: 270px;
+        height: 270px;
+        cursor: pointer;
+        padding: 1px;
+        margin: 30px;
+        border-radius: 15px;
+        border: 0.5px solid white;
+        box-shadow: -15px 15px 15px black;
     }
   }
 
