@@ -10,9 +10,14 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">    
+    
   <link rel="stylesheet" href="all-places.css">
 
   <link rel="stylesheet" href="chat.css">
+
+  <script src="script.js"></script>
 
 </head>
 <body>
@@ -57,65 +62,79 @@
   <main>
     <div class="container-fluid">
       <div class="title">
+        <a href="index.html#places"> <i class="fa-regular fas fa-circle-arrow-left fa-2xl"></i> </a>
         <h3>Cafe Alicia <span>Gallery</span></h3>
+        <a href="la-nebbia.html"> <i class="fa-regular fas fa-circle-arrow-right fa-2xl"></i> </a>
       </div>
-      <div class="close-btn">
-        <a href="index.html#places"><i class="fa-regular fa-circle-xmark fa-2xl"></i></a>
+
+      <div class="pop-up inactive">
+        <div class="top">
+          <p class="image-name">cafe</p>
+          <span class="close-btn"><i class="fa-regular fa-circle-xmark fa-l" id="close-button"></i></span>
+        </div>
+  
+        <button class="arrow-btn left-arrow"><i class="fa-duotone fas fa-arrow-left"></i></button>
+  
+        <button class="arrow-btn right-arrow"><i class="fa-duotone fas fa-arrow-right"></i></button>
+  
+        <img src="./images/top 4/Cafe-Alicia-Top-View.jpg" alt="" class="large-image">
+        
       </div>
+
 
     <div class="grid" >
       <div class="row">
         <div class="col pictures">
-          <img src="images/cafe-alicia/alicia.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe07.jpg" alt="">
-          <img src="images/cafe-alicia/cafe-alice.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe1.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe11.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe14.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe16.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe17.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe18.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe7.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe03.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe06.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe5.jpg" alt="">       
+          <img src="images/cafe-alicia/alicia.jpg" alt="image-1" class="image">
+          <img src="/images/cafe-alicia/cafe07.jpg" alt="image-2" class="image">
+          <img src="images/cafe-alicia/cafe-alice.jpg" alt="image-3" class="image">
+          <img src="/images/cafe-alicia/cafe.jpg" alt="image-4" class="image">
+          <img src="/images/cafe-alicia/cafe1.jpg" alt="image-5" class="image">
+          <img src="/images/cafe-alicia/cafe11.jpg" alt="image-6" class="image">
+          <img src="/images/cafe-alicia/cafe14.jpg" alt="image-7" class="image">
+          <img src="/images/cafe-alicia/cafe16.jpg" alt="image-8" class="image">
+          <img src="/images/cafe-alicia/cafe17.jpg" alt="image-9" class="image">
+          <img src="/images/cafe-alicia/cafe18.jpg" alt="image-10" class="image">
+          <img src="/images/cafe-alicia/cafe7.jpg" alt="image-11" class="image">
+          <img src="/images/cafe-alicia/cafe03.jpg" alt="image-12" class="image">
+          <img src="/images/cafe-alicia/cafe06.jpg" alt="image-13" class="image">
+          <img src="/images/cafe-alicia/cafe5.jpg" alt="image-14" class="image">       
         </div>
       </div>
       
       <div class="row">
         <div class="col pictures">
-          <img src="/images/cafe-alicia/cafe19.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe2.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe20.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe21.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe22.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe23.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe24.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe25.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe01.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe05.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe08.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe09.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe001.jpg" alt="">
+          <img src="/images/cafe-alicia/cafe19.jpg" alt="image-15" class="image">
+          <img src="/images/cafe-alicia/cafe2.jpg" alt="image-16" class="image">
+          <img src="/images/cafe-alicia/cafe20.jpg" alt="image-17" class="image">
+          <img src="/images/cafe-alicia/cafe21.jpg" alt="image-18" class="image">
+          <img src="/images/cafe-alicia/cafe22.jpg" alt="image-19" class="image">
+          <img src="/images/cafe-alicia/cafe23.jpg" alt="image-20" class="image">
+          <img src="/images/cafe-alicia/cafe24.jpg" alt="image-21" class="image">
+          <img src="/images/cafe-alicia/cafe25.jpg" alt="image-22" class="image">
+          <img src="/images/cafe-alicia/cafe01.jpg" alt="image-23" class="image">
+          <img src="/images/cafe-alicia/cafe05.jpg" alt="image-24" class="image">
+          <img src="/images/cafe-alicia/cafe08.jpg" alt="image-25" class="image">
+          <img src="/images/cafe-alicia/cafe09.jpg" alt="image-26" class="image">
+          <img src="/images/cafe-alicia/cafe001.jpg" alt="image-27" class="image">
         </div>
       </div>
       
       <div class="row">
         <div class="col pictures">
-          <img src="/images/cafe-alicia/cafe29.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe2.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe27.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe28.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe3.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe4.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe07.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe6.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe02.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe04.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe002.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe003.jpg" alt="">
-          <img src="/images/cafe-alicia/cafe004.jpg" alt="">
+          <img src="/images/cafe-alicia/cafe29.jpg" alt="image-28" class="image">
+          <img src="/images/cafe-alicia/cafe2.jpg" alt="image-29" class="image">
+          <img src="/images/cafe-alicia/cafe27.jpg" alt="image-30" class="image">
+          <img src="/images/cafe-alicia/cafe28.jpg" alt="image-31" class="image">
+          <img src="/images/cafe-alicia/cafe3.jpg" alt="image-32" class="image">
+          <img src="/images/cafe-alicia/cafe4.jpg" alt="image-33" class="image">
+          <img src="/images/cafe-alicia/cafe07.jpg" alt="image-34" class="image">
+          <img src="/images/cafe-alicia/cafe6.jpg" alt="image-35" class="image">
+          <img src="/images/cafe-alicia/cafe02.jpg" alt="image-36" class="image">
+          <img src="/images/cafe-alicia/cafe04.jpg" alt="image-37" class="image">
+          <img src="/images/cafe-alicia/cafe002.jpg" alt="image-38" class="image">
+          <img src="/images/cafe-alicia/cafe003.jpg" alt="image-39" class="image">
+          <img src="/images/cafe-alicia/cafe004.jpg" alt="image-40" class="image">
         </div>
       </div>
 
@@ -167,6 +186,8 @@
   }
 
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
 <!-- font awesome -->
 <script src="https://kit.fontawesome.com/6e9296540d.js" crossorigin="anonymous"></script>
