@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 100vw;
+}
+
 main{
     max-width: 100vw;
     font-size: 10px;
@@ -163,28 +167,31 @@ hr {
 h5 {
     font-weight: 500;
     font-size: 2rem;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 /* activities */
 /* ============================================ */
 .activities-section {
     width: 100%;
-    margin-bottom: 4rem;  
+    margin-bottom: 4rem;    
 }
 
 .more-pictures {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: column; */
     justify-content: space-around;
     align-items: center;
-    margin-right: 3rem;
-    width: 90%;  
+    /* margin-right: 4rem; */
+    width: 80%; 
+    margin-bottom: 0rem;
+    margin-left: 8rem;
+    
 }
 
 .more-pictures img {
-    width: 270px;
-    height: 270px;
+    width: 500px;
+    height: 500px;
     cursor: pointer;
     padding: 1px;
     margin: 30px;
