@@ -1,0 +1,166 @@
+/* contact section */
+/* ============================================== */
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5rem;
+    width: 100%;
+    height: auto;
+}
+
+.personal-contact {
+    font-size: 12px;
+    margin-top: 2rem;
+}
+
+.personal-contact i:hover {
+    color: skyblue;
+}
+
+.contact-form {
+    font-size: 18px;
+    /* width: 30rem; */
+    height: auto;
+    margin: auto;
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 1px 20px 10px #0f2e57;
+}
+
+.submit {
+    border-radius: 8px;
+    width: 5rem;
+    border: 1px solid black;
+}
+
+.submit:hover {
+    color: red;
+}
+
+.copyright {
+    font-size: 18px;
+}
+
+/* =======RESPONSIVE=========== */
+
+@media screen and (max-width: 912px) {
+    .personal-contact{
+        margin-right: 4rem;
+        font-size: 25px !important;
+        padding-left: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    h6 {
+        font-size: 25px;
+    }
+
+    .copyright {
+        font-size: 25px !important ;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .personal-contact{
+        margin-right: 4rem;
+        font-size: 25px !important;
+        padding-left: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    h6 {
+        font-size: 25px;
+    }
+
+    .copyright {
+        font-size: 25px !important ;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .contact-form {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .contact-section {
+        margin: 0;
+        padding: 0;
+    }
+
+    .personal-contact{
+        margin-right: 4rem;
+        font-size: 18px !important;
+        padding-left: 3rem;
+    }
+
+    .contact-form {
+        width: 20rem;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .personal-contact, .contact-form {
+        margin-right: 4rem;
+        font-size: 15px !important
+    }
+
+    .personal-contact {
+        margin-right: 4rem;
+        padding-left: 3rem;
+    }
+
+    .contact-form {
+        width: 15rem;
+    }
+
+    .copyright {
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .contact-header {
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact-form {
+        width: 15rem;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .copyright {
+        font-size: 15px !important;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .contact-header {
+        font-size: 18px;
+    }
+
+    .personal-contact {
+        font-size: 12px !important;
+    }
+
+    h6 {
+        font-size: 12px;
+    }
+
+    .contact-form {
+        font-size: 12px !important;
+    }
+
+    .copyright {
+        font-size: 12px !important;
+    }
+}
