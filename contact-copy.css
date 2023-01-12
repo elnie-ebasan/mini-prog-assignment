@@ -104,6 +104,13 @@
         width: 20rem;
     }
 
+    h6 {
+        font-size: 18px !important;
+    }
+
+    .copyright {
+        font-size: 18px !important;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -121,8 +128,12 @@
         width: 15rem;
     }
 
+    h6 {
+        font-size: 18px !important;
+    }
+
     .copyright {
-        font-size: 12px !important;
+        font-size: 15px !important;
     }
 }
 

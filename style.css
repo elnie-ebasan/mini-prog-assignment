@@ -78,7 +78,11 @@ main{
 
   /* responsive */
   /* =================================== */
-  @media screen and (max-width: 991px){
+@media screen and (max-width: 991px){
+    main{
+        height: 135vh;
+    }
+
   .activities-section {
     width: 100%;
     margin-bottom: 4rem;    

@@ -39,7 +39,7 @@
         width: 100%;
         margin:2rem auto; 
         padding: 0 4rem;
-        border: 1px solid black;
+        /* border: 1px solid black; */
     }
     
     .activities-section img {
@@ -66,13 +66,14 @@
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  
 
     .activities-section {
         width: 100%;
         margin:2rem auto; 
         padding: 0 2rem;
-        border: 1px solid black;
+        /* border: 1px solid black; */
     }
         
     .activities-section img {
@@ -84,22 +85,15 @@
         border: 0.5px solid white;
         box-shadow: -15px 15px 15px black;
     }
-        
-    .activities-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: auto 10rem;
-        padding: 1rem;
-        border: 1px solid black;
+
+    .more-pictures {
+        margin: 0rem 13rem;
     }
-        
-    .act-description {
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: auto;
+
+    .more-content {
+        width: 65%;
+        margin-bottom: 2rem;
+        /* margin: 0rem 0rem; */
     }
     
     .image {
@@ -176,6 +170,12 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .more-pictures {
+        margin: 0rem -2rem;
+    }
+}
+
 @media screen and (max-width: 575px) {
     .more-pictures {
         display: flex;
@@ -195,7 +195,7 @@
 
 @media screen and (max-width: 540px) {
     .more-pictures {
-        margin: 0rem 1.5rem;
+        margin: 0rem -0.5rem;
     }
 
     .more-content {
@@ -255,7 +255,7 @@
     .activities-section {
         width: 100%;
         padding: 0;
-        border: 1px solid black;
+        /* border: 1px solid black; */
     }
     
     .activities-section img {
@@ -278,6 +278,7 @@
         padding: 1rem;
     }
     .more-content {
+        width: 18rem;
         padding: 2rem;
     }
 
@@ -290,11 +291,31 @@
     }
 }
 
+@media screen and (max-width: 393px) {
+    .more-pictures {
+        margin: 0rem 4.5rem;
+    }
+
+    .more-content {
+        width: 19rem;
+        margin: 0rem 0rem;
+    }
+}
+
 @media screen and (max-width: 390px) {
     .more {
         align-items: center;
         justify-content: center;
         margin-right: 5rem;
+    }
+
+    .more-pictures {
+        margin: 0rem 4rem;
+    }
+
+    .more-content {
+        width: 19rem;
+        margin: 0rem 0rem;
     }
 }
 
@@ -303,7 +324,6 @@
         width: 100%;
         margin:2rem auto; 
         padding: 0 0.5rem;
-        border: 1px solid black;
     }
     
     .activities-section img {
@@ -331,10 +351,11 @@
     }
     
     .more-pictures{
-        padding: 1rem;
+        margin: 0rem 5.5rem;
     }
     .more-content {
-        padding: 2rem;
+        width: 18rem;
+        padding: 1rem;
     }
     
     .p-more {
