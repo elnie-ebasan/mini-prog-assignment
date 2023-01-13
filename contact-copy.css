@@ -78,15 +78,47 @@
     }
 
     .copyright {
-        font-size: 25px !important ;
+        font-size: 20px !important ;
     }
 }
 
 @media screen and (max-width: 699px) {
     .contact-form {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
+
+@media screen and (max-width: 699px){
+    .contact-form {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .copyright {
+        font-size: 15px !important ;
+    }
+
+    .personal-contact{
+        margin-right: 4rem;
+        font-size: 15px !important;
+        padding-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 499px) {
+
+    .personal-contact{
+        margin-right: 4rem;
+        font-size: 13px !important;
+        padding-left: 3rem;
+    }
+
+    h6 {
+        font-size: 15px !important;
+    }
+}
+
 
 @media screen and (max-width: 414px) {
     .contact-section {
@@ -96,20 +128,22 @@
 
     .personal-contact{
         margin-right: 4rem;
-        font-size: 18px !important;
+        font-size: 13px !important;
         padding-left: 3rem;
     }
 
     .contact-form {
-        width: 20rem;
+        width: 18rem;
+        height: 20rem;
+        font-size: 13px;
     }
 
     h6 {
-        font-size: 18px !important;
+        font-size: 13px !important;
     }
 
     .copyright {
-        font-size: 18px !important;
+        font-size: 13px !important;
     }
 }
 
@@ -141,16 +175,23 @@
     .contact-header {
         padding: 0;
         margin: 0;
+        font-size: 18px !important;
+    }
+
+    .personal-contact, h6 {
+        margin-right: 4rem;
+        padding-left: 4rem;
+        font-size: 15px !important;
     }
 
     .contact-form {
         width: 15rem;
+        height: 23rem;
         margin: auto;
-        margin-top: 10px;
     }
 
     .copyright {
-        font-size: 15px !important;
+        font-size: 12px !important;
     }
 }
 

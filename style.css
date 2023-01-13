@@ -78,6 +78,7 @@ main{
 
   /* responsive */
   /* =================================== */
+
 @media screen and (max-width: 991px){
     main{
         height: 135vh;
@@ -111,7 +112,7 @@ main{
     transition: transform .5s; 
     transform: scale(1.05);
 }
-  }
+}
 
 @media screen and (max-width: 767px) {
 
@@ -223,10 +224,7 @@ main{
 
   @media screen and (max-width: 411px) {
     main{
-        font-size: 10px;
-        background: linear-gradient(to top,rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url("images/top 4/arminda\'s.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
+        height: 70vh !important;
     }
 
     .web-content{
@@ -234,18 +232,45 @@ main{
     }
     
     .words {
-        font-size: 3rem;
+        font-size: 3rem !important;
         color: white;
         text-shadow: 1px 1px 2px black, 0 0 25px #1272a4, 0 0 5px #8dd7e2;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem !important;
     }
     
     .content {
         width: 20rem;
-        font-size: 12px;
+        font-size: 15px !important;
         color: whitesmoke;
         letter-spacing: 1px;
         font-weight: 500;
+        text-shadow: 2px 2px 5px black, 0 0 25px #1272a4, 0 0 5px #1e707c;
+        border: 1px solid lightblue;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  @media screen and (max-width: 315px) {
+    main{
+        height: 60vh !important;
+    }
+
+    .web-content{
+        padding-top: 8rem;
+    }
+    
+    .words {
+        font-size: 2rem !important;
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px #1272a4, 0 0 5px #8dd7e2;
+        margin-bottom: 2rem !important;
+    }
+    
+    .content {
+        width: 20rem;
+        font-size: 12px !important;
+        color: whitesmoke;
         text-shadow: 2px 2px 5px black, 0 0 25px #1272a4, 0 0 5px #1e707c;
         border: 1px solid lightblue;
         margin: auto;
